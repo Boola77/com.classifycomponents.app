@@ -1,5 +1,7 @@
 # Data and machine learning models
-data/
+data/*
+!data/model/
+!data/model/**
 
 # Python virtual environment
 .venv/
