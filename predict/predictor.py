@@ -34,8 +34,13 @@ def load_label_encoder(path):
 
 
 # ---- paths ----
-path_trainer_predict = r"data\model"
-label_path = os.path.join(path_trainer_predict, "label_encoder.pkl")
+from pathlib import Path
+
+BASE_DIR = Path(__file__).resolve().parent.parent
+
+path_trainer_predict = BASE_DIR / "data" / "model"
+label_path = path_trainer_predict / "label_encoder.pkl"
+
 
 # ---- load once ----
 model, tokenizer, device = load_model_and_tokenizer(path_trainer_predict)
