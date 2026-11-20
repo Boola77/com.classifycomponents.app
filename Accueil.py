@@ -3,8 +3,6 @@ import pandas as pd
 import base64
 import chardet
 
-import predict.predictor as model
-
 
 # -----------------------------------
 # CONFIGURATION
